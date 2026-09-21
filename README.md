@@ -323,7 +323,7 @@ API REST para gestão de finanças pessoais — usuários, contas, categorias e 
 
 Pode chamar — respondo tudo.
 
-📧 **SEU_EMAIL** &nbsp;·&nbsp; 💼 **[LinkedIn](LINK_LINKEDIN)** &nbsp;·&nbsp; 🌐 **[Portfólio](LINK_PORTFOLIO)**
+📧 **sergio.gabriel.meyer10@gmail.com** &nbsp;·&nbsp; 💼 **[Sérgio Meyer](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** &nbsp;·&nbsp; 🌐 **[Portfólio](github.com/sergiomeyer23)**
 
 <div align="center">
 
