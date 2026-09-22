@@ -1,5 +1,7 @@
 <a name="english"></a>
-
+<p align="center">
+  <img src="banner.jpg" alt="Sérgio Meyer — Data Analyst & Developer" width="100%" />
+</p>
 <div align="center">
 
 <img src="https://avatars.githubusercontent.com/u/90986811?v=4" width="112" height="112" alt="Sérgio Meyer" />
@@ -158,7 +160,7 @@ REST API for personal finance management — users, accounts, categories and tra
 
 Reach out — I answer everything.
 
-📧 **SEU_EMAIL** &nbsp;·&nbsp; 💼 **[LinkedIn](LINK_LINKEDIN)** &nbsp;·&nbsp; 🌐 **[Portfolio](LINK_PORTFOLIO)**
+📧 **sergio.gabriel.meyer10@gmail.com** &nbsp;·&nbsp; 💼 **[Sérgio Meyer](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** &nbsp;·&nbsp; 🌐 **[Portfolio](github.com/sergiomeyer23)**
 
 <div align="center">
 
@@ -174,6 +176,9 @@ Reach out — I answer everything.
 <!-- ══════════════════════════ PORTUGUÊS ══════════════════════════ -->
 
 <div align="center">
+<p align="center">
+  <img src="banner.jpg" alt="Sérgio Meyer — Data Analyst & Developer" width="100%" />
+</p>
 
 <img src="https://avatars.githubusercontent.com/u/90986811?v=4" width="112" height="112" alt="Sérgio Meyer" />
 
