@@ -1,0 +1,122 @@
+From 68e15c69c9a1637c0605d50253a48035779f6882 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?S=C3=A9rgio=20Meyer?= <sergio.gabriel.meyer10@gmail.com>
+Date: Tue, 22 Sep 2026 13:33:57 +0000
+Subject: [PATCH] fix: derive model registry algorithm names via prefix removal
+
+MotherModelRegistry._load_models() used str.lstrip("m_") to derive the
+algorithm name from each m_*.py model module filename. str.lstrip strips a
+*set* of leading characters instead of a prefix, so any module whose
+algorithm name starts with 'm' is silently mangled (e.g. 'm_mlp' -> 'lp'),
+and get_model_class_by_algorithm_and_type() then fails to resolve it.
+
+Extract the derivation into _algorithm_from_module_name(), which uses
+str.removeprefix() (project requires Python >= 3.11), and reuse it in the
+module-load warning message, which had the same defect via split('m_')[1].
+
+Existing modules (catboost, lasso, randomForest, tabicl, tabpfn) keep their
+current names; only previously corrupted names change.
+
+Add unit tests for the derivation, including regression cases for
+'m'-prefixed algorithm names, and a consistency check asserting that every
+registered algorithm token maps back to an existing m_*.py module file.
+
+Fixes #68
+---
+ src/mother/ml/__init__.py | 15 ++++++++++++--
+ test/unit/test_init.py    | 43 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 56 insertions(+), 2 deletions(-)
+
+diff --git a/src/mother/ml/__init__.py b/src/mother/ml/__init__.py
+index 96f6833..2a3f057 100644
+--- a/src/mother/ml/__init__.py
++++ b/src/mother/ml/__init__.py
+@@ -23,6 +23,17 @@ module_logger: logging.Logger = logging.getLogger(__name__)
+ # Initialize containers for automatically discovered model classes and algorithms
+ 
+ 
++def _algorithm_from_module_name(module_name: str) -> str:
++    """Derive the algorithm name from an ``m_*.py`` model module filename stem.
++
++    ``str.removeprefix`` is used instead of ``str.lstrip`` because the latter
++    strips a *set* of characters rather than a prefix, which silently mangles
++    module names whose algorithm name starts with ``m``
++    (e.g. ``m_mlp`` would become ``lp`` instead of ``mlp``).
++    """
++    return module_name.lower().removeprefix("m_")
++
++
+ class MotherModelRegistry:
+     """
+     Singleton registry for dynamically discovering and managing model classes in the 'mother.ml.models' package.
+@@ -84,7 +95,7 @@ class MotherModelRegistry:
+                         self.model_classes[name] = obj
+                         self.model_classes_lower[name.lower()] = name  # Add lower-case mapping
+ 
+-                        algo: str = model_file.lower().lstrip("m_")
++                        algo: str = _algorithm_from_module_name(model_file)
+ 
+                         if algo not in self.supported_algorithms:
+                             self.supported_algorithms[algo] = set()
+@@ -93,7 +104,7 @@ class MotherModelRegistry:
+                 module_logger.warning(
+                     (
+                         f"Warning: Failed to load model from {model_file}: {str(e)} "
+-                        f"(Please, ignore this message if you don't need {model_file.split('m_')[1]})"
++                        f"(Please, ignore this message if you don't need {_algorithm_from_module_name(model_file)})"
+                     )
+                 )
+         module_logger.debug("Model loading complete.")
+diff --git a/test/unit/test_init.py b/test/unit/test_init.py
+index eea7abb..5bb2762 100644
+--- a/test/unit/test_init.py
++++ b/test/unit/test_init.py
+@@ -53,3 +53,46 @@ def test_get_model_class_by_algorithm_and_type_catboost():
+ def test_get_model_class_by_algorithm_and_type_invalid_type():
+     with pytest.raises(ValueError):
+         ml.get_model_class_by_algorithm_and_type("catboost", "foo_bar")
++
++
++@pytest.mark.parametrize(
++    "module_name, expected_algorithm",
++    [
++        # Existing modules keep their current (correct) names
++        ("m_catboost", "catboost"),
++        ("m_lasso", "lasso"),
++        ("m_randomForest", "randomforest"),
++        ("m_tabicl", "tabicl"),
++        ("m_tabpfn", "tabpfn"),
++        # Regression test for #68: algorithm names starting with 'm' were
++        # mangled by str.lstrip, which strips a *set* of characters instead
++        # of a prefix (e.g. 'm_mlp' became 'lp')
++        ("m_mlp", "mlp"),
++        ("m_mars", "mars"),
++        ("m_mlr", "mlr"),
++        ("m_m_mixture", "m_mixture"),
++    ],
++)
++def test_algorithm_from_module_name(module_name, expected_algorithm):
++    from mother.ml import _algorithm_from_module_name
++
++    assert _algorithm_from_module_name(module_name) == expected_algorithm
++
++
++def test_available_algorithms_are_well_formed_module_names():
++    from pathlib import Path
++
++    import mother.ml.models as models_pkg
++
++    from mother.ml import _algorithm_from_module_name
++
++    models_dir = Path(models_pkg.__file__).parent
++    expected = {_algorithm_from_module_name(f.stem) for f in models_dir.glob("m_*.py")}
++    registered = set(ml.get_available_algorithms())
++
++    # Every registered algorithm token is non-empty and correctly derived
++    # from an existing 'm_*.py' module filename (no mangled names like 'lp')
++    assert registered
++    assert all(algorithm for algorithm in registered)
++    assert registered <= expected
++    assert "catboost" in registered
+-- 
+2.39.5
+
