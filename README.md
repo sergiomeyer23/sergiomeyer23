@@ -18,7 +18,7 @@
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-sergiomeyer23.github.io-0969da?style=for-the-badge&logo=githubpages&logoColor=white)](https://sergiomeyer23.github.io/portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fsergio--meyer-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)
-[![Email](https://img.shields.io/badge/EMAIL-SEU_EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sergio.gabriel.meyer10@gmail.com)
+[![Email](https://img.shields.io/badge/EMAIL-sergio.gabriel.meyer10%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sergio.gabriel.meyer10@gmail.com)
 
 <br />
 
@@ -192,10 +192,9 @@ Reach out — I answer everything.
 
 <br />
 
-[![Portfólio](https://img.shields.io/badge/PORTFÓLIO-sergiomeyer23.github.io-0969da?style=for-the-badge&logo=githubpages&logoColor=white)](LINK_PORTFOLIO)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fsergio--meyer-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](LINK_LINKEDIN)
-[![E-mail](https://img.shields.io/badge/EMAIL-SEU_EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEU_EMAIL)
-
+[![Portfólio](https://img.shields.io/badge/PORTFÓLIO-sergiomeyer23.github.io-0969da?style=for-the-badge&logo=githubpages&logoColor=white)](https://sergiomeyer23.github.io/portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fsergio--meyer-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)
+[![E-mail](https://img.shields.io/badge/EMAIL-sergio.gabriel.meyer10%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sergio.gabriel.meyer10@gmail.com)
 <br />
 
 [`🇬🇧 Read in English`](#english)
