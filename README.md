@@ -16,9 +16,9 @@
 
 <br />
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-sergiomeyer23.github.io-0969da?style=for-the-badge&logo=githubpages&logoColor=white)](LINK_PORTFOLIO)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fsergio--meyer-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](LINK_LINKEDIN)
-[![Email](https://img.shields.io/badge/EMAIL-SEU_EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEU_EMAIL)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-sergiomeyer23.github.io-0969da?style=for-the-badge&logo=githubpages&logoColor=white)](https://sergiomeyer23.github.io/portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fsergio--meyer-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)
+[![Email](https://img.shields.io/badge/EMAIL-SEU_EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sergio.gabriel.meyer10@gmail.com)
 
 <br />
 
@@ -160,7 +160,7 @@ REST API for personal finance management — users, accounts, categories and tra
 
 Reach out — I answer everything.
 
-📧 **sergio.gabriel.meyer10@gmail.com** &nbsp;·&nbsp; 💼 **[Sérgio Meyer](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** &nbsp;·&nbsp; 🌐 **[Portfolio](github.com/sergiomeyer23)**
+📧 **sergio.gabriel.meyer10@gmail.com** &nbsp;·&nbsp; 💼 **[Sérgio Meyer](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** &nbsp;·&nbsp; 🌐 **[Portfolio](https://sergiomeyer23.github.io/portfolio/)**
 
 <div align="center">
 
@@ -328,7 +328,7 @@ API REST para gestão de finanças pessoais — usuários, contas, categorias e 
 
 Pode chamar — respondo tudo.
 
-📧 **sergio.gabriel.meyer10@gmail.com** &nbsp;·&nbsp; 💼 **[Sérgio Meyer](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** &nbsp;·&nbsp; 🌐 **[Portfólio](github.com/sergiomeyer23)**
+📧 **sergio.gabriel.meyer10@gmail.com** &nbsp;·&nbsp; 💼 **[Sérgio Meyer](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** &nbsp;·&nbsp; 🌐 **[Portfólio](https://sergiomeyer23.github.io/portfolio/)**
 
 <div align="center">
 
