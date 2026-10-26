@@ -72,11 +72,11 @@ Pipeline de análise fundamentalista da WEG (WEGE3.SA): ETL de demonstrações d
 
 ---
 
-### 🧾 [Automação de Relatório de Vendas](https://github.com/sergiomeyer23/automaticao-planilha)
+### 🧾 [Automação de Relatório de Vendas](https://github.com/sergiomeyer23/automacao-planilha)
 
 Aplicação Java que lê uma planilha `.xlsx` de vendas brutas e gera um relatório gerencial com 3 abas (resumo, vendas por produto e top 5). Trata entrada suja do mundo real: datas `DD/MM/AAAA` ou `AAAA-MM-DD` e preços `3,49` ou `R$ 1.234,56`.
 
-`Java` `Apache POI` `Maven` `BigDecimal` · [código](https://github.com/sergiomeyer23/automaticao-planilha)
+`Java` `Apache POI` `Maven` `BigDecimal` · [código](https://github.com/sergiomeyer23/automacao-planilha)
 
 ---
 
@@ -158,7 +158,7 @@ I build analysis pipelines and dashboards with **Python, SQL and Power BI**, and
 
 - **[Olist Sales Analysis](https://github.com/sergiomeyer23/olist-sales-performance-analysis)** — 96,203 delivered orders (R$ 13.2M GMV), interactive Streamlit dashboard and 22 tests. Key finding: late delivery drops the average rating from **4.29 to 2.57**.
 - **[WEG Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline)** — CVM/Yahoo ETL, fundamentals, DCF with Selic × FX sensitivity and a Streamlit dashboard.
-- **[Sales Report Automation](https://github.com/sergiomeyer23/automaticao-planilha)** — Java + Apache POI tool that turns messy Excel sales files into a management report.
+- **[Sales Report Automation](https://github.com/sergiomeyer23/automacao-planilha)** — Java + Apache POI tool that turns messy Excel sales files into a management report.
 
 **Stack:** SQL · Python (Pandas, Plotly, Streamlit) · Power BI · Excel · PostgreSQL · Git · Docker  
 **Also:** Java · Spring Boot · TypeScript · Next.js
