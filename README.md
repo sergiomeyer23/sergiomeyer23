@@ -84,7 +84,7 @@ Aplicação Java que lê uma planilha `.xlsx` de vendas brutas e gera um relató
 
 CLI em Python para relatórios agendados que falham em silêncio. Gera o PDF, imprime e só marca o dia como concluído depois que o job sai da fila de impressão. Cada tentativa vai para um diário SQLite antes do envio, um lock do sistema impede execuções simultâneas e, quando o resultado não pode ser confirmado, o dia fica `unknown` e nada é reimpresso sozinho.
 
-`Python` `SQLite` `ReportLab` `PowerShell` `GitHub Actions` · **74 testes** · validado numa fila de impressão real do Windows no CI, ainda não numa impressora física · [código](https://github.com/sergiomeyer23/print-guard)
+`Python` `SQLite` `ReportLab` `PowerShell` `GitHub Actions` · testes com injeção de falhas · validado numa fila de impressão real do Windows no CI, ainda não numa impressora física · [código](https://github.com/sergiomeyer23/print-guard)
 
 ---
 
@@ -167,7 +167,7 @@ I build analysis pipelines and dashboards with **Python, SQL and Power BI**, and
 - [Olist Sales Analysis](https://github.com/sergiomeyer23/olist-sales-performance-analysis): 96,203 delivered orders (R$ 13.2M GMV), interactive Streamlit dashboard and 22 tests. Late delivery drops the average rating from 4.29 to 2.57.
 - [WEG Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline): CVM/Yahoo ETL, fundamentals, DCF with Selic × FX sensitivity and a Streamlit dashboard.
 - [Sales Report Automation](https://github.com/sergiomeyer23/automacao-planilha): Java + Apache POI tool that turns messy Excel sales files into a management report.
-- [Print Guard](https://github.com/sergiomeyer23/print-guard): Python CLI for scheduled printing that confirms the job left the queue. SQLite journal, process lock and an explicit `unknown` state instead of blind reprints. 74 tests, validated against a real Windows print queue in CI, not yet on a physical printer.
+- [Print Guard](https://github.com/sergiomeyer23/print-guard): Python CLI for scheduled printing that confirms the job left the queue. SQLite journal, process lock and an explicit `unknown` state instead of blind reprints. Fault-injection tests, validated against a real Windows print queue in CI, not yet on a physical printer.
 
 **Stack:** SQL · Python (Pandas, Plotly, Streamlit) · Power BI · Excel · PostgreSQL · Git · Docker  
 **Also:** Java · Spring Boot · TypeScript · Next.js
