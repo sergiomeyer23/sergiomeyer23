@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.jpg" alt="Sérgio Meyer — Analista de Dados" width="100%" />
+  <img src="banner.jpg" alt="Sérgio Meyer, Analista de Dados" width="100%" />
 </p>
 
 <div align="center">
@@ -10,7 +10,7 @@
 
 ### Analista de Dados | Python · SQL · Power BI
 
-*Transformo dados operacionais em decisões de negócio — e construo as ferramentas que automatizam isso.*
+*Transformo dados operacionais em decisões de negócio e construo as ferramentas que automatizam isso.*
 
 📍 Cascavel, Paraná · 🌎 Remoto (UTC-3) · 🎯 Aberto a vagas de Analista de Dados
 
@@ -31,23 +31,23 @@
 
 ## Sobre
 
-Trabalho na fronteira entre **negócio e dados**. Venho de **3 anos em inteligência comercial** (FMCG, distribuição e varejo), com gestão analítica de uma carteira de **4.000 clientes ativos** e suporte a uma equipe de **50 vendedores**. Por isso, quando abro um dashboard, procuro a *decisão* por trás do gráfico — não apenas o gráfico.
+Trabalho na fronteira entre **negócio e dados**. Venho de **3 anos em inteligência comercial** (FMCG, distribuição e varejo), com gestão analítica de uma carteira de **4.000 clientes ativos** e suporte a uma equipe de **50 vendedores**. Quando abro um dashboard, procuro a decisão por trás do gráfico.
 
 Hoje construo pipelines de análise e dashboards em **Python, SQL e Power BI**, e automatizo rotinas que ainda dependem de planilha. Também desenvolvo em **Java/Spring Boot** e **TypeScript/Next.js** quando a planilha deixa de ser suficiente.
 
 ```text
-🔭 Construindo agora ···· WEG equity pipeline — ETL CVM/Yahoo, DCF e dashboard
+🔭 Construindo agora ···· WEG equity pipeline (ETL CVM/Yahoo, DCF e dashboard)
 📊 Estudando agora ······ SQL avançado (window functions), DAX e modelagem dimensional
 💬 Pode me perguntar ···· Análise de vendas, ETL em Python, dashboards e automação de Excel
 ```
 
-**O que eu entrego:** análise exploratória com hipótese e recomendação · dashboards que respondem perguntas de negócio · ETL e automação de relatórios · documentação e testes para o número não mudar de lugar.
+Entrego análises exploratórias com hipótese e recomendação, dashboards que respondem perguntas de negócio, ETL e automação de relatórios, além de documentação e testes para que o número não mude de lugar.
 
 ---
 
 ## Projetos em destaque
 
-### 📦 [Olist — Análise de Performance de Vendas](https://github.com/sergiomeyer23/olist-sales-performance-analysis)
+### [Olist: Análise de Performance de Vendas](https://github.com/sergiomeyer23/olist-sales-performance-analysis)
 
 Análise de **96.203 pedidos entregues** (R$ 13,2M em GMV) e dashboard interativo em Streamlit para responder onde estão as alavancas de crescimento e satisfação de um marketplace.
 
@@ -64,7 +64,7 @@ Análise de **96.203 pedidos entregues** (R$ 13,2M em GMV) e dashboard interativ
 
 ---
 
-### 📈 [WEG — Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline)
+### [WEG: Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline)
 
 Pipeline de análise fundamentalista da WEG (WEGE3.SA): ETL de demonstrações da **CVM** e preços do **Yahoo Finance**, KPIs (margens, ROIC, alavancagem, FCF), **DCF com sensibilidade Selic × câmbio** e dashboard em Streamlit.
 
@@ -72,7 +72,7 @@ Pipeline de análise fundamentalista da WEG (WEGE3.SA): ETL de demonstrações d
 
 ---
 
-### 🧾 [Automação de Relatório de Vendas](https://github.com/sergiomeyer23/automacao-planilha)
+### [Automação de Relatório de Vendas](https://github.com/sergiomeyer23/automacao-planilha)
 
 Aplicação Java que lê uma planilha `.xlsx` de vendas brutas e gera um relatório gerencial com 3 abas (resumo, vendas por produto e top 5). Trata entrada suja do mundo real: datas `DD/MM/AAAA` ou `AAAA-MM-DD` e preços `3,49` ou `R$ 1.234,56`.
 
@@ -80,7 +80,7 @@ Aplicação Java que lê uma planilha `.xlsx` de vendas brutas e gera um relató
 
 ---
 
-### 🎓 [FalowAI — Aprendizado de Inglês](https://github.com/sergiomeyer23/FalowAI) · [demo](https://falow-ai.vercel.app)
+### [FalowAI: Aprendizado de Inglês](https://github.com/sergiomeyer23/FalowAI) · [demo](https://falow-ai.vercel.app)
 
 Ambiente pessoal de aprendizagem de inglês com perfil CEFR, engine de XP com anti-farming, laboratório de speaking e recomendação baseada em regras. Frontend em Next.js/TypeScript com estado local-first; backend Spring Boot em evolução.
 
@@ -92,8 +92,8 @@ Ambiente pessoal de aprendizagem de inglês com perfil CEFR, engine de XP com an
 
 | Projeto | O que mostra |
 |---|---|
-| [Mercavel](https://github.com/sergiomeyer23/Mercavel) | Comparador de cesta de supermercado com dados rastreáveis (`sourceUrl`, `collectedAt`) — React + TypeScript |
-| [Mangos](https://github.com/sergiomeyer23/Mangos) | Gestor de caixa para microempreendedores com entrada em linguagem natural e IA opcional — JavaScript, 28 autotestes |
+| [Mercavel](https://github.com/sergiomeyer23/Mercavel) | Comparador de cesta de supermercado com dados rastreáveis (`sourceUrl`, `collectedAt`): React + TypeScript |
+| [Mangos](https://github.com/sergiomeyer23/Mangos) | Gestor de caixa para microempreendedores com entrada em linguagem natural e IA opcional: JavaScript, 28 autotestes |
 | [Retail Sales Analyzer](https://github.com/sergiomeyer23/retail-sales-analyzer) | Análise de vendas em CSV com Python puro: ticket médio, extremos e filtros |
 | [Pandas Fundamentos](https://github.com/sergiomeyer23/pandas-fundamentos) | 12 exercícios de limpeza, filtros, `groupby`, `merge` e datas |
 | [Portfólio](https://github.com/sergiomeyer23/portfolio) | Site bilíngue com estudos de caso, cases e contato |
@@ -130,8 +130,8 @@ Ambiente pessoal de aprendizagem de inglês com perfil CEFR, engine de XP com an
 
 Contribuições upstream no [MotherML](https://github.com/bayer-group/MotherML) (framework de ML para propriedades moleculares da Bayer):
 
-- [PR #91](https://github.com/bayer-group/MotherML/pull/91) — padronização de nomes no model registry (**mergeado**)
-- [PR #106](https://github.com/bayer-group/MotherML/pull/106) — agrupamento por Murcko scaffold (**em review**)
+- [PR #91](https://github.com/bayer-group/MotherML/pull/91): padronização de nomes no model registry (**mergeado**)
+- [PR #106](https://github.com/bayer-group/MotherML/pull/106): agrupamento por Murcko scaffold (**em review**)
 
 ---
 
@@ -150,15 +150,15 @@ Estou aberto a oportunidades de **Analista de Dados** (remoto ou Cascavel/PR). R
 
 ### Data Analyst | Python · SQL · Power BI
 
-I work at the intersection of **business and data**. I bring **3 years of commercial intelligence** (FMCG, distribution and retail), managing analytics for a portfolio of **4,000 active clients** and supporting **50 sales reps**. That is why I look for the *decision* behind the chart, not just the chart.
+I work at the intersection of **business and data**. I bring **3 years of commercial intelligence** (FMCG, distribution and retail), managing analytics for a portfolio of **4,000 active clients** and supporting **50 sales reps**. I look for the decision behind the chart.
 
 I build analysis pipelines and dashboards with **Python, SQL and Power BI**, and automate routines that still depend on spreadsheets. I also ship **Java/Spring Boot** and **TypeScript/Next.js** applications when a spreadsheet is no longer enough.
 
 **Featured work**
 
-- **[Olist Sales Analysis](https://github.com/sergiomeyer23/olist-sales-performance-analysis)** — 96,203 delivered orders (R$ 13.2M GMV), interactive Streamlit dashboard and 22 tests. Key finding: late delivery drops the average rating from **4.29 to 2.57**.
-- **[WEG Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline)** — CVM/Yahoo ETL, fundamentals, DCF with Selic × FX sensitivity and a Streamlit dashboard.
-- **[Sales Report Automation](https://github.com/sergiomeyer23/automacao-planilha)** — Java + Apache POI tool that turns messy Excel sales files into a management report.
+- [Olist Sales Analysis](https://github.com/sergiomeyer23/olist-sales-performance-analysis): 96,203 delivered orders (R$ 13.2M GMV), interactive Streamlit dashboard and 22 tests. Late delivery drops the average rating from 4.29 to 2.57.
+- [WEG Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline): CVM/Yahoo ETL, fundamentals, DCF with Selic × FX sensitivity and a Streamlit dashboard.
+- [Sales Report Automation](https://github.com/sergiomeyer23/automacao-planilha): Java + Apache POI tool that turns messy Excel sales files into a management report.
 
 **Stack:** SQL · Python (Pandas, Plotly, Streamlit) · Power BI · Excel · PostgreSQL · Git · Docker  
 **Also:** Java · Spring Boot · TypeScript · Next.js
