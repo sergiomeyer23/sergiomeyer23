@@ -1,183 +1,43 @@
-<p align="center">
-  <img src="banner.jpg" alt="Sérgio Meyer, Analista de Dados" width="100%" />
-</p>
-
-<div align="center">
-
-<img src="https://avatars.githubusercontent.com/u/90986811?v=4" width="112" height="112" alt="Sérgio Meyer" />
-
 # Sérgio Meyer
 
-### Analista de Dados | Python · SQL · Power BI
+**Data & Software Engineer | Python · SQL · TypeScript · Java (Spring Boot)**
 
-*Transformo dados operacionais em decisões de negócio e construo as ferramentas que automatizam isso.*
+📍 Cascavel, PR, Brasil
 
-📍 Cascavel, Paraná · 🌎 Remoto (UTC-3) · 🎯 Aberto a vagas de Analista de Dados
+[](https://sergiomeyer23.github.io/portfolio/)
+[LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/sergio-meyer-7aaa45407)
+[](mailto:sergio.gabriel.meyer10@gmail.com)
 
-<br />
+Construo pipelines de dados, automações operacionais e aplicações backend/web que transformam dados brutos em decisões de negócio. Atuo na interseção entre **Engenharia/Análise de Dados** e **Engenharia de Software**, desenvolvendo desde coletores distribuídos e modelos analíticos em Python/SQL até APIs REST em Java (Spring Boot) e interfaces reativas em TypeScript/React — sempre com testes automatizados e integração contínua (CI/CD).
 
-[![Portfólio](https://img.shields.io/badge/PORTF%C3%93LIO-sergiomeyer23.github.io-0969da?style=for-the-badge&logo=githubpages&logoColor=white)](https://sergiomeyer23.github.io/portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-in%2Fsergio--meyer-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)
-[![E-mail](https://img.shields.io/badge/EMAIL-sergio.gabriel.meyer10%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sergio.gabriel.meyer10@gmail.com)
-[![Currículo](https://img.shields.io/badge/CURR%C3%8DCULO-PDF-2ea44f?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://sergiomeyer23.github.io/portfolio/assets/curriculo-sergio-meyer.pdf)
+## Contribuições Open Source em Destaque
 
-<br />
+* **[Bayer-Group/MotherML](https://github.com/Bayer-Group/MotherML)** ([Fork no Perfil](https://github.com/sergiomeyer23/MotherML)) — Framework de Machine Learning em Python mantido pelo grupo Bayer para predição de propriedades moleculares e dados de transcriptômica:
+  * **PR #91 (Model Registry):** Implementação de registro unificado para descoberta e instanciação padronizada de modelos (CatBoost, Random Forest, Lasso, TabPFN e estimadores customizados compatíveis com Scikit-Learn).
+  * **PR #106 (Murcko Scaffold Grouping):** Agrupamento baseado em estruturas químicas (*Murcko scaffolds*) para validação cruzada consciente de domínio, evitando *data leakage* entre compostos estruturalmente similares.
 
-[`🇬🇧 Read in English`](#english)
+## Projetos em Produção e Estudos de Caso
 
-</div>
+| Projeto | Domínio | Arquitetura, Engenharia e Impacto | Stack Principal |
+| :--- | :--- | :--- | :--- |
+| **[Mercavel](https://github.com/sergiomeyer23/Mercavel)** ([App Online](https://sergiomeyer23.github.io/Mercavel/)) | Engenharia de Dados & Full-Stack | Comparador e rastreador diário de preços entre supermercados de Cascavel/PR. Coleta automatizada e paralelizada em 4 *shards* via GitHub Actions, pipeline de *entity resolution* em duas etapas (pareamento exato por EAN + heurística normalizada de marca/nome/gramatura) e testes automatizados. | TypeScript, React, Node.js, Supabase, Vitest, GitHub Actions |
+| **[weg_equity_pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline)** | Engenharia de Dados & Finanças Quantitativas | Pipeline ETL modular que extrai demonstrativos regulatórios da CVM e cotações do Yahoo Finance para a WEG (`WEGE3.SA`), calcula múltiplos fundamentalistas, executa valuation por Fluxo de Caixa Descontado (DCF) e publica dashboard interativo com suporte a execução determinística (`--mock` e `--live`). | Python, Pandas, Streamlit, Pytest, GitHub Actions |
+| **[print-guard](https://github.com/sergiomeyer23/print-guard)** | Automação de Sistemas & Backend Python | Utilitário CLI para agendamento, auditoria de fila de impressão (spooler) e emissão de alertas em ambientes corporativos Windows. Utiliza banco SQLite local com controle de *lock/journal* para garantir idempotência e evitar impressões duplicadas, com releases versionadas (`v0.2.1` / `v0.3.0rc1`). | Python, SQLite, ReportLab, Windows Task Scheduler, Pytest |
+| **[expense-tracker-api](https://github.com/sergiomeyer23/expense-tracker-api)** | Engenharia Backend (REST API) | API REST para gestão financeira pessoal construída em arquitetura em camadas (`Controller`, `Service`, `Repository`), com validação estrita via DTOs, tratamento global de exceções, persistência relacional e ambiente conteinerizado. | Java 21, Spring Boot, Spring Data JPA, PostgreSQL, Docker Compose, JUnit 5 |
+| **[olist-sales-performance-analysis](https://github.com/sergiomeyer23/olist-sales-performance-analysis)** | Analytics Engineering & Business Intelligence | Análise de performance logística, SLA de entregas, satisfação de clientes (NPS/reviews) e concentração de Pareto sobre 96 mil pedidos reais do marketplace Olist, separando o motor de cálculo em Python da camada de visualização. | Python, Pandas, Plotly, Streamlit, Pytest, GitHub Actions |
+| **[automacao-planilha](https://github.com/sergiomeyer23/automacao-planilha)** | Automação Corporativa & ETL em Java | Ferramenta CLI que higieniza bases de vendas despadronizadas em Excel (`.xlsx`) e gera relatórios gerenciais consolidados com indicadores por categoria e produto, validada por suíte de testes no CI. | Java, Apache POI, JUnit, GitHub Actions |
+| **[FalowAI](https://github.com/sergiomeyer23/FalowAI)** | Produto Full-Stack & EdTech | Plataforma de aprendizado adaptativo de inglês com laboratório de pronúncia, dashboard de progresso e motor de gamificação com regras anti-farming de XP testadas no backend. | TypeScript, Next.js, Java, Spring Boot |
 
----
+## Stack Técnica e Práticas de Engenharia
 
-## Sobre
-
-Trabalho na fronteira entre **negócio e dados**. Venho de **3 anos em inteligência comercial** (FMCG, distribuição e varejo), com gestão analítica de uma carteira de **4.000 clientes ativos** e suporte a uma equipe de **50 vendedores**. Quando abro um dashboard, procuro a decisão por trás do gráfico.
-
-Hoje construo pipelines de análise e dashboards em **Python, SQL e Power BI**, e automatizo rotinas que ainda dependem de planilha. Também desenvolvo em **Java/Spring Boot** e **TypeScript/Next.js** quando a planilha deixa de ser suficiente.
-
-```text
-🔭 Construindo agora ···· WEG equity pipeline (ETL CVM/Yahoo, DCF e dashboard)
-📊 Estudando agora ······ SQL avançado (window functions), DAX e modelagem dimensional
-💬 Pode me perguntar ···· Análise de vendas, ETL em Python, dashboards e automação de Excel
-```
-
-Entrego análises exploratórias com hipótese e recomendação, dashboards que respondem perguntas de negócio, ETL e automação de relatórios, além de documentação e testes para que o número não mude de lugar.
-
----
-
-## Projetos em destaque
-
-### [Olist: Análise de Performance de Vendas](https://github.com/sergiomeyer23/olist-sales-performance-analysis)
-
-Análise de **96.203 pedidos entregues** (R$ 13,2M em GMV) e dashboard interativo em Streamlit para responder onde estão as alavancas de crescimento e satisfação de um marketplace.
-
-[![Prazo de entrega x satisfação](https://raw.githubusercontent.com/sergiomeyer23/olist-sales-performance-analysis/main/outputs/figuras/12_prazo_vs_nota.png)](https://github.com/sergiomeyer23/olist-sales-performance-analysis)
-
-| Achado | Número |
-|---|---|
-| Atraso derruba a avaliação | **4,29** no prazo → **2,57** atrasado |
-| Pareto entre vendedores | **18%** geram **80%** da receita |
-| Concentração geográfica | SP + RJ + MG = **63%** da receita |
-| Frete pesa mais no Norte/Nordeste | **22,7%** no Norte vs 13,1% no Sudeste (mesmo estado) |
-
-`Python` `Pandas` `Plotly` `Streamlit` `Pytest` · **22 testes** · [código](https://github.com/sergiomeyer23/olist-sales-performance-analysis)
-
----
-
-### [WEG: Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline)
-
-Pipeline de análise fundamentalista da WEG (WEGE3.SA): ETL de demonstrações da **CVM** e preços do **Yahoo Finance**, KPIs (margens, ROIC, alavancagem, FCF), **DCF com sensibilidade Selic × câmbio** e dashboard em Streamlit.
-
-`Python` `Pandas` `Plotly` `Streamlit` `Pytest` · modo `--mock` para rodar offline · [código](https://github.com/sergiomeyer23/weg_equity_pipeline)
-
----
-
-### [Automação de Relatório de Vendas](https://github.com/sergiomeyer23/automacao-planilha)
-
-Aplicação Java que lê uma planilha `.xlsx` de vendas brutas e gera um relatório gerencial com 3 abas (resumo, vendas por produto e top 5). Trata entrada suja do mundo real: datas `DD/MM/AAAA` ou `AAAA-MM-DD` e preços `3,49` ou `R$ 1.234,56`.
-
-`Java` `Apache POI` `Maven` `BigDecimal` · [código](https://github.com/sergiomeyer23/automacao-planilha)
-
----
-
-### [Print Guard: Impressão Agendada com Confirmação](https://github.com/sergiomeyer23/print-guard)
-
-CLI em Python para relatórios agendados que falham em silêncio. Gera o PDF, imprime e só marca o dia como concluído depois que o job sai da fila de impressão. Cada tentativa vai para um diário SQLite antes do envio, um lock do sistema impede execuções simultâneas e, quando o resultado não pode ser confirmado, o dia fica `unknown` e nada é reimpresso sozinho.
-
-`Python` `SQLite` `ReportLab` `PowerShell` `GitHub Actions` · testes com injeção de falhas · validado numa fila de impressão real do Windows no CI, ainda não numa impressora física · [código](https://github.com/sergiomeyer23/print-guard)
-
----
-
-### [FalowAI: Aprendizado de Inglês](https://github.com/sergiomeyer23/FalowAI) · [demo](https://falow-ai.vercel.app)
-
-Ambiente pessoal de aprendizagem de inglês com perfil CEFR, engine de XP com anti-farming, laboratório de speaking e recomendação baseada em regras. Frontend em Next.js/TypeScript com estado local-first; backend Spring Boot em evolução.
-
-`TypeScript` `Next.js` `Tailwind` `Spring Boot` `Flyway` · [código](https://github.com/sergiomeyer23/FalowAI)
-
----
-
-## Outros projetos
-
-| Projeto | O que mostra |
-|---|---|
-| [Mercavel](https://github.com/sergiomeyer23/Mercavel) | Comparador de cesta de supermercado com dados rastreáveis (`sourceUrl`, `collectedAt`): React + TypeScript |
-| [Mangos](https://github.com/sergiomeyer23/Mangos) | Gestor de caixa para microempreendedores com entrada em linguagem natural e IA opcional: JavaScript, 28 autotestes |
-| [Retail Sales Analyzer](https://github.com/sergiomeyer23/retail-sales-analyzer) | Análise de vendas em CSV com Python puro: ticket médio, extremos e filtros |
-| [Pandas Fundamentos](https://github.com/sergiomeyer23/pandas-fundamentos) | 12 exercícios de limpeza, filtros, `groupby`, `merge` e datas |
-| [Portfólio](https://github.com/sergiomeyer23/portfolio) | Site bilíngue com estudos de caso, cases e contato |
-
----
-
-## Stack
-
-<div align="center">
-
-**Dados & Análise**
-
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-
-**Bancos & Ferramentas**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-</div>
-
-**Também trabalho com:** Java · Spring Boot · TypeScript · Next.js · Apache POI · Maven.
-
----
-
-## Open source
-
-Contribuições upstream no [MotherML](https://github.com/bayer-group/MotherML) (framework de ML para propriedades moleculares da Bayer):
-
-- [PR #91](https://github.com/bayer-group/MotherML/pull/91): padronização de nomes no model registry (**mergeado**)
-- [PR #106](https://github.com/bayer-group/MotherML/pull/106): agrupamento por Murcko scaffold (**em review**)
-
----
+| Área | Tecnologias e Ferramentas |
+| :--- | :--- |
+| **Engenharia & Análise de Dados** | Python, Pandas, SQL (PostgreSQL, SQLite), ETL/ELT Pipelines, Data Cleaning & Entity Resolution, Power BI, Streamlit, Plotly |
+| **Desenvolvimento Backend & Web** | Java 21, Spring Boot, Spring Data JPA, REST APIs, TypeScript, React, Next.js, Node.js, HTML5, CSS3 / Tailwind CSS |
+| **Qualidade, Testes & DevOps** | GitHub Actions (CI/CD & Cron Workflows), Docker, Docker Compose, Pytest, JUnit 5, Mockito, Vitest, ESLint, Prettier, Git |
 
 ## Contato
 
-Estou aberto a oportunidades de **Analista de Dados** (remoto ou Cascavel/PR). Respondo todas as mensagens.
-
-📧 **[sergio.gabriel.meyer10@gmail.com](mailto:sergio.gabriel.meyer10@gmail.com)**  
-💼 **[LinkedIn](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** · 🌐 **[Portfólio](https://sergiomeyer23.github.io/portfolio/)** · 📄 **[Currículo](https://sergiomeyer23.github.io/portfolio/assets/curriculo-sergio-meyer.pdf)**
-
----
-
-<a name="english"></a>
-
-## English
-
-### Data Analyst | Python · SQL · Power BI
-
-I work at the intersection of **business and data**. I bring **3 years of commercial intelligence** (FMCG, distribution and retail), managing analytics for a portfolio of **4,000 active clients** and supporting **50 sales reps**. I look for the decision behind the chart.
-
-I build analysis pipelines and dashboards with **Python, SQL and Power BI**, and automate routines that still depend on spreadsheets. I also ship **Java/Spring Boot** and **TypeScript/Next.js** applications when a spreadsheet is no longer enough.
-
-**Featured work**
-
-- [Olist Sales Analysis](https://github.com/sergiomeyer23/olist-sales-performance-analysis): 96,203 delivered orders (R$ 13.2M GMV), interactive Streamlit dashboard and 22 tests. Late delivery drops the average rating from 4.29 to 2.57.
-- [WEG Equity Pipeline](https://github.com/sergiomeyer23/weg_equity_pipeline): CVM/Yahoo ETL, fundamentals, DCF with Selic × FX sensitivity and a Streamlit dashboard.
-- [Sales Report Automation](https://github.com/sergiomeyer23/automacao-planilha): Java + Apache POI tool that turns messy Excel sales files into a management report.
-- [Print Guard](https://github.com/sergiomeyer23/print-guard): Python CLI for scheduled printing that confirms the job left the queue. SQLite journal, process lock and an explicit `unknown` state instead of blind reprints. Fault-injection tests, validated against a real Windows print queue in CI, not yet on a physical printer.
-
-**Stack:** SQL · Python (Pandas, Plotly, Streamlit) · Power BI · Excel · PostgreSQL · Git · Docker  
-**Also:** Java · Spring Boot · TypeScript · Next.js
-
-📍 Cascavel, Brazil · 🌎 Remote (UTC-3) · 🎯 Open to Data Analyst roles
-
-📧 **[sergio.gabriel.meyer10@gmail.com](mailto:sergio.gabriel.meyer10@gmail.com)** · 💼 **[LinkedIn](https://www.linkedin.com/in/s%C3%A9rgio-meyer-7aaa45407/)** · 🌐 **[Portfolio](https://sergiomeyer23.github.io/portfolio/)**
-
-<div align="center">
-
-[![PT](https://img.shields.io/badge/⬆_Voltar_ao_topo-0969da?style=flat-square)](#sérgio-meyer)
-
-</div>
+* **Portfólio Completo e Estudos de Caso:** [sergiomeyer23.github.io/portfolio](https://sergiomeyer23.github.io/portfolio/)
+* **LinkedIn:** [linkedin.com/in/sergio-meyer-7aaa45407](https://www.google.com/search?q=https://www.linkedin.com/in/sergio-meyer-7aaa45407)
+* **E-mail:** [sergio.gabriel.meyer10@gmail.com](mailto:sergio.gabriel.meyer10@gmail.com)
